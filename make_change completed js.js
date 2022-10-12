@@ -27,7 +27,7 @@ cents %= 1;
 //Displays Pennies
 $("pennies").value = pennies
 };
-
+ 
 window.onload = function () {
     $("calculate").onclick = calculateChange;
     };
