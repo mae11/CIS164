@@ -3,36 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Make Change</title>
-   	<link rel="stylesheet" href="make_change.css">
+	<title>Convert Temperatures</title>
+   	<link rel="stylesheet" href="convert_temp.css">
 </head>
 
 <body>
 	<main>
-		<h1>Change Calculator</h1>
-
-		<label>Enter amount of change due (0-99):</label>
+		<h1>Convert temperatures</h1> 
 		<div>
-			<input type="text" id="cents" />
-			<input type="button" value="Calculate" name="calculate" id="calculate" />
+			<input type="radio" name="conversion_type" id="to_celsius" checked>Fahrenheit to Celsius
 		</div>
 		<div>
-			<label>Quarters:</label>
-			<input type="text" id="quarters" disabled>
+			<input type="radio" name="conversion_type" id="to_fahrenheit">Celsius to Fahrenheit
 		</div>
 		<div>
-			<label>Dimes:</label>
-			<input type="text" id="dimes" disabled>
+			<label id="degree_label_1">Enter F degrees:</label>
+			<input type="text" id="degrees_entered">
 		</div>
 		<div>
-			<label>Nickels:</label>
-			<input type="text" id="nickels" disabled>
+			<label id="degree_label_2">Degrees Celsius:</label>
+			<input type="text" id="degrees_computed" disabled>
 		</div>
 		<div>
-			<label>Pennies:</label>
-			<input type="text" id="pennies" disabled>
-		</div>
+			<label></label>
+			<input type="button" id="convert" value="Convert" />
+		</div> 
 	</main>
-	<script src="make_change.js"></script>
+	<script src="convert_temp.js"></script>
 </body>
 </html>
